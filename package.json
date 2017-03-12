@@ -1,0 +1,34 @@
+{
+  "name": "baudata",
+  "version": "1.0.0",
+  "description": "BauData website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BauData/baudata.github.io.git"
+  },
+  "keywords": [
+    "animation",
+    "data",
+    "bot",
+    "code"
+  ],
+  "author": "BauData team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BauData/baudata.github.io/issues"
+  },
+  "homepage": "https://github.com/BauData/baudata.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.2.0",
+    "grunt-gh-pages": "^2.0.0"
+  }
+}
