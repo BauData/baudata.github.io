@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0px;
+    color: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+hr { 
+	border: 0; 
+	height: 0.01em;
+	width: 95vw;
+	background: #333;
+}
+
+.headerMain {
+    text-align: center;
+}
+
+.header1 {
+	letter-spacing: 0.25em;	
+    padding: 20vh 0 0 0;
+    margin:0;
+}
+
+.header2 {
+	letter-spacing: 0.2em;
+	font-weight: 500;
+    padding: 20vh 0 0 0;
+    margin:0;
+}
+
+.header3 {
+	letter-spacing: 0.15em;
+	font-weight: 400;
+    padding: 3vh 0 0 0;
+    margin:0;
+}
+
+.header4 {
+	font-weight: 300;
+    padding: 15vh 0 12vh 0;
+    margin:0;
+    letter-spacing: 0.05em;
+}
+
+.button {
+    background-color: black; /* default */
+    border: none;
+    color: white;
+    padding: 0.05em 0.25em
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 3vh;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.buttonJoin {
+	background: -webkit-linear-gradient(141deg, #FF5F6D, #FFC371);
+	background: linear-gradient(141deg, #FFC371, #FF5F6D);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+    border-radius: .5em .75em;
+    border: 0.075em solid #FF5F6D;
+}
+
+.buttonJoin:hover {
+	background: -webkit-linear-gradient(141deg, #FFC371 , #FF5F6D);
+	background: linear-gradient(141deg, #FFC371 , #FF5F6D);
+	-webkit-text-fill-color: white;
+	color: white;    
+	border-radius: .75em .5em;
+    border: 0.075em solid white;
+}
+
+.buttonSubmit {
+	background: -webkit-linear-gradient(141deg,#185a9d, #43cea2);
+	background: linear-gradient(141deg, #43cea2, #185a9d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+    border-radius: .75em .5em;
+    border: 0.075em solid #185a9d;
+}
+
+.buttonSubmit:hover {
+	background: -webkit-linear-gradient(141deg, #43cea2, #185a9d);
+	background: linear-gradient(141deg, #43cea2, #185a9d);
+	-webkit-text-fill-color: white; 
+	color: white;    
+	border-radius: .5em .75em;
+    border: 0.075em solid white;
+}
+
