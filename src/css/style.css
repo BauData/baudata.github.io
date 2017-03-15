@@ -1,11 +1,16 @@
-* {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
 }
 
 body {
     background-color: white;
-    margin: 0px;
+    margin: 0;
     color: black;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -14,9 +19,9 @@ body {
 
 hr { 
 	border: 0; 
-	height: 0.01em;
-	width: 95vw;
-	background: #333;
+	height: 1px;
+	width: 90vw;
+	background: #999;
 }
 
 footer {
@@ -24,11 +29,10 @@ footer {
 }
 
 .footera {
-  text-decoration: none;
-  color: black;
+	color: #333;
 }
 
-.iconfa{
+.iconfa {
 	padding: .2em;
 }
 
@@ -38,43 +42,42 @@ footer {
 
 .header1 {
 	letter-spacing: .25em;	
-    padding: 20vh 0 0 0;
+    padding-top: 20vh;
     margin: 0;
 }
 
 .header2 {
-	letter-spacing: 0.2em;
+	letter-spacing: .2em;
 	font-weight: 500;
-    padding: 20vh 0 0 0;
-    margin:0;
+    padding-top: 20vh;
+    margin: 0;
 }
 
 .header3 {
-	letter-spacing: 0.15em;
+	letter-spacing: .15em;
 	font-weight: 400;
-    padding: 3vh 0 0 0;
-    margin:0;
+    padding-top: 3vh;
+    margin: 0;
 }
 
 .header4 {
 	font-weight: 300;
     padding: 15vh 0 12vh 0;
-    margin:0;
-    letter-spacing: 0.05em;
+    margin: 0;
+    letter-spacing: .05em;
 }
 
 .button {
-    background-color: black; /* default */
+    background-color: black;
     border: none;
     color: white;
-    padding: 0.05em 0.25em
+    padding: .05em .25em;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 1em;
     margin: 3vh;
-    -webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
     cursor: pointer;
 }
 
@@ -85,7 +88,7 @@ footer {
 	-webkit-text-fill-color: transparent;
 	color: transparent;
     border-radius: .5em .75em;
-    border: 0.075em solid #FF5F6D;
+    border: .075em solid #FF5F6D;
 }
 
 .buttonJoin:hover {
@@ -94,7 +97,7 @@ footer {
 	-webkit-text-fill-color: white;
 	color: white;    
 	border-radius: .75em .5em;
-    border: 0.075em solid white;
+    border: .075em solid white;
 }
 
 .buttonSubmit {
@@ -104,7 +107,7 @@ footer {
 	-webkit-text-fill-color: transparent;
 	color: transparent;
     border-radius: .75em .5em;
-    border: 0.075em solid #185a9d;
+    border: .075em solid #185a9d;
 }
 
 .buttonSubmit:hover {
@@ -113,6 +116,84 @@ footer {
 	-webkit-text-fill-color: white; 
 	color: white;    
 	border-radius: .5em .75em;
-    border: 0.075em solid white;
+    border: .075em solid white;
 }
 
+a:link, a:visited, a:hover, a:focus, a:active {
+	text-decoration: none
+}
+
+.content {
+	padding: 2em 5em;
+}
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.media {
+ 	float: left;
+    width: 50%;
+    padding-right: 5em;
+}
+
+.article {
+	float: right;
+    width: 50%;
+	color: black;
+}
+
+.mediaImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+   	margin: auto;
+}
+
+.articleTitle {
+	letter-spacing: .1em;
+	font-weight: 500;
+	font-size: 2em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.articleInfo {
+	font-weight: 300;
+	font-size: .8em;
+	color: #777;
+	float: left;
+}
+
+.articleView {
+	margin-right: 2em;
+}
+
+.articleIntro {
+	padding-top: 2em;
+	margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 47.5em) {
+    .media, .article {
+        float: none;
+        width: auto;
+    }
+    .media{
+    	padding-right: 0;
+    }
+    .article {
+		padding: 2em 1em 0 1em;
+	}
+}
+
+@media screen and (max-width: 32.5em) {
+	.content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
