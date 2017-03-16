@@ -20,3 +20,6 @@ window.onclick = function(event) {
         modalSubmit.style.display = "none";
     }
 }
+
+var io = require('socket.io-client');
+var socket = io.connect('http://www.google.ch');
