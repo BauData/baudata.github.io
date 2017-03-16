@@ -22,4 +22,5 @@ window.onclick = function(event) {
 }
 
 var io = require('socket.io-client');
-var socket = io.connect('http://www.google.ch');
+var socket = io.connect('https://swiss-mountains.herokuapp.com/');
+console.log(socket);
