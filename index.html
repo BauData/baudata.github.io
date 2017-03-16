@@ -25,7 +25,8 @@
 			<div id="modalJoin" class="modal">
 			  <div class="modal-content">
 			    <form action="https://formspree.io/baudata@protonmail.com" method="POST">
-			    	<input id="inputEmail" type="email" name="_replyto" autocapitalize="off" autocorrect="off" placeholder="email@address">
+			    	<input id="inputEmail" type="email" name="_replyto" autocapitalize="off" autocorrect="off" placeholder="email@address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+			    	<input type="hidden" name="_subject" value="New submission!" />
 			    	<input type="submit" value="Join Us" class="button inputJoin">
 				</form>
 			  </div>
@@ -34,7 +35,8 @@
 			<div id="modalSubmit" class="modal">
 			  	<div class="modal-content">
 					<form action="https://formspree.io/baudata@protonmail.com" method="POST">
-						<textarea id="textArea" name="message" placeholder="Your topic idea" required></textarea>
+						<textarea id="textArea" name="topic" placeholder="Your topic idea" required></textarea>
+						<input type="hidden" name="_subject" value="New topic idea!" />
 						<br>
 						<input type="submit" value="Submit a Topic" class="button inputSubmitTopic">
 					</form>
