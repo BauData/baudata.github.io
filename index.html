@@ -21,8 +21,25 @@
 			<h2 class="header2">a Diary of</h2>
 			<h3 class="header3">Visual Stories</h3>
 			<h4 class="header4">We are a collective which explores relavant topics using codes and data animations.</h4>
-			<button class="button buttonJoin">Join Us</button>
-			<button class="button buttonSubmit">Submit a Topic</button>
+			<div id="buttonJoin" class="button buttonJoin">Join Us</div>
+			<div id="modalJoin" class="modal">
+			  <div class="modal-content">
+			    <form action="https://formspree.io/baudata@protonmail.com" method="POST">
+			    	<input id="inputEmail" type="email" name="_replyto" autocapitalize="off" autocorrect="off" placeholder="email@address">
+			    	<input type="submit" value="Join Us" class="button inputJoin">
+				</form>
+			  </div>
+			</div>
+			<div id="buttonSubmitTopic" class="button buttonSubmit">Submit a Topic</div>
+			<div id="modalSubmit" class="modal">
+			  	<div class="modal-content">
+					<form method="POST" action="http://formspree.io/baudata@protonmail.com">
+						<textarea id="textArea" name="message" placeholder="Your topic idea" required></textarea>
+						<br>
+						<input type="submit" value="Submit a Topic" class="button inputSubmitTopic">
+					</form>
+				</div>
+			</div>
 		</header>
 		<hr>
 		<section>
