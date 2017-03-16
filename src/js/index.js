@@ -20,7 +20,3 @@ window.onclick = function(event) {
         modalSubmit.style.display = "none";
     }
 }
-
-var io = require('socket.io-client');
-var socket = io.connect('https://swiss-mountains.herokuapp.com/');
-console.log(socket);
