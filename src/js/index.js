@@ -11,8 +11,19 @@ joinUs.onclick = function() {
 submitTopic.onclick = function() {
     modalSubmit.style.display = "block";
 }
+
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+    if (event.target == modalJoin) {
+        modalJoin.style.display = "none";
+    }
+    else if (event.target == modalSubmit) {
+        modalSubmit.style.display = "none";
+    }
+}
+
+window.ontouchstart = function(event) {
     if (event.target == modalJoin) {
         modalJoin.style.display = "none";
     }
