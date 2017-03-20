@@ -5,7 +5,7 @@ function validateEmail(email) {
 
 function validateEmailForm() {
 	var x = document.forms["emailForm"]["_replyto"].value;
-	if (validateEmail(x)) {
+	if (!validateEmail(x)) {
 		alert("Please fill out with a valid email");
 		return false;
 	}
