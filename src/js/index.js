@@ -24,7 +24,6 @@ window.onclick = function(event) {
 }
 
 window.ontouchend = function(event) {
-	event.preventDefault();
     if (event.target == modalJoin) {
         modalJoin.style.display = "none";
     }
