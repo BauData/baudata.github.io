@@ -29,7 +29,8 @@ module.exports = function(grunt) {
           files: {
               'dist/js/scripts.min.js': [
                   'src/js/index.js'
-              ]
+              ],
+              'dist/js/validate.min.js': ['src/js/validate.js']
           }
       }
     }

@@ -14,6 +14,7 @@
 		<!-- End Google Analytics -->
 		<link type="text/css" rel="stylesheet" href="dist/css/style.css">
 		<script src="https://use.fontawesome.com/ac701121a7.js"></script>
+		<script src="dist/js/validate.min.js"></script>
 	</head>
 	<body>
 		<header class="headerMain">
@@ -24,7 +25,7 @@
 			<div id="buttonJoin" class="button buttonJoin">Join Us</div>
 			<div id="modalJoin" class="modal">
 			  <div class="modal-content">
-			    <form action="https://formspree.io/baudata@protonmail.com" method="POST">
+			    <form id="emailForm" action="https://formspree.io/baudata@protonmail.com" method="POST" onsubmit="return validateEmailForm()">
 			    	<input id="inputEmail" type="email" name="_replyto" autocapitalize="off" autocorrect="off" placeholder="email@address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
 			    	<input type="hidden" name="_subject" value="New submission!" />
 			    	<input type="submit" value="Join Us" class="button inputJoin">
@@ -34,9 +35,9 @@
 			<div id="buttonSubmitTopic" class="button buttonSubmit">Submit a Topic</div>
 			<div id="modalSubmit" class="modal">
 			  	<div class="modal-content">
-					<form action="https://formspree.io/baudata@protonmail.com" method="POST">
+					<form id="topicForm" action="https://formspree.io/baudata@protonmail.com" method="POST" onsubmit="return validateTopicForm()">
 						<textarea id="textArea" name="topic" placeholder="Your topic idea" required></textarea>
-						<input type="hidden" name="_subject" value="New topic idea!" />
+						<input type="hidden" name="_subject" value="New topic idea!"/>
 						<br>
 						<input type="submit" value="Submit a Topic" class="button inputSubmitTopic">
 					</form>
