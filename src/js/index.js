@@ -1,3 +1,4 @@
+var touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 // Get the modal
 var modalJoin = document.getElementById('modalJoin');
 var modalSubmit = document.getElementById('modalSubmit');
@@ -12,22 +13,9 @@ submitTopic.onclick = function() {
     modalSubmit.style.display = "block";
 }
 
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modalJoin) {
-        modalJoin.style.display = "none";
-    }
-    else if (event.target == modalSubmit) {
-        modalSubmit.style.display = "none";
-    }
+function hideModal() {
+	this.style.display = "none";
 }
 
-window.ontouchend = function(event) {
-    if (event.target == modalJoin) {
-        modalJoin.style.display = "none";
-    }
-    else if (event.target == modalSubmit) {
-        modalSubmit.style.display = "none";
-    }
-}
+modalJoin.addEventListener(touchEvent, hideModal);
+modalSubmit.addEventListener(touchEvent, hideModal);
