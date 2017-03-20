@@ -1,4 +1,4 @@
-var touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+var touchEvent = 'ontouchend' in window ? 'touchend' : 'click';
 // Get the modal
 var modalJoin = document.getElementById('modalJoin');
 var modalSubmit = document.getElementById('modalSubmit');
@@ -13,9 +13,12 @@ submitTopic.onclick = function() {
     modalSubmit.style.display = "block";
 }
 
-function hideModal() {
-	this.style.display = "none";
+function hideModal(event) {
+	if (event.target == modalJoin) {
+        modalJoin.style.display = "none";
+    }
+    else if (event.target == modalSubmit) {
+        modalSubmit.style.display = "none";
+    }
 }
-
-modalJoin.addEventListener(touchEvent, hideModal);
-modalSubmit.addEventListener(touchEvent, hideModal);
+window.addEventListener(touchEvent, hideModal);
