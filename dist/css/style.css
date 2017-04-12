@@ -41,12 +41,14 @@ footer {
 }
 
 .header1 {
+	color: #fe38cb;
 	letter-spacing: .25em;	
     padding-top: 20vh;
     margin: 0;
 }
 
 .header2 {
+	color: #fe38cb;
 	letter-spacing: .2em;
 	font-weight: 500;
     padding-top: 20vh;
