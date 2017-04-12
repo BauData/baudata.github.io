@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     clean: ['dist/'],
     browserify: {
-      'dist/js/scripts.min.js': ['dist/js/scripts.min.js']
+      'dist/js/scripts.min.js': ['src/js/index.js']
     },
     copy: {
       css: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           },
           files: {
               'dist/js/scripts.min.js': [
-                  'src/js/index.js'
+                  'dist/js/scripts.min.js'
               ],
               'dist/js/validate.min.js': ['src/js/validate.js']
           }
@@ -37,15 +37,15 @@ module.exports = function(grunt) {
   });
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', '', function() {
     var taskList = [
         'clean',
         'copy',
-        'uglify',
-        'browserify'
+        'browserify',
+        'uglify'
     ];
     grunt.task.run(taskList);
   });

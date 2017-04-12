@@ -9,12 +9,12 @@
 }
 
 body {
-    background-color: white;
-    margin: 0;
-    color: black;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1em;
+	background-color: white;
+	margin: 0;
+	color: black;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
 }
 
 hr { 
@@ -37,51 +37,51 @@ footer {
 }
 
 .headerMain {
-    text-align: center;
+	text-align: center;
 }
 
 .header1 {
-	color: #fe38cb;
 	letter-spacing: .25em;	
-    padding-top: 20vh;
-    margin: 0;
+	padding-top: 20vh;
+	margin: 0;
 }
 
 .header2 {
 	color: #fe38cb;
 	letter-spacing: .2em;
 	font-weight: 500;
-    padding-top: 20vh;
-    margin: 0;
+	padding-top: 20vh;
+	margin: 0;
 }
 
 .header3 {
+	color: #fe38cb;
 	letter-spacing: .15em;
 	font-weight: 400;
-    padding-top: 3vh;
-    margin: 0;
+	padding-top: 3vh;
+	margin: 0;
 }
 
 .header4 {
 	font-weight: 300;
-    padding: 15vh 0 12vh 0;
-    margin: 0;
-    letter-spacing: .05em;
+	padding: 15vh 0 12vh 0;
+	margin: 0;
+	letter-spacing: .05em;
 }
 
 .button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: .1em .3em;
-    text-align: center;
-    display: inline-block;
-    font-size: 1em;
-    letter-spacing: .1em;
-    margin: 3vh;
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
-    cursor: pointer;
+	background-color: black;
+	border: none;
+	color: white;
+	padding: .1em .3em;
+	text-align: center;
+	display: inline-block;
+	font-size: 1em;
+	letter-spacing: .1em;
+	margin: 3vh;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+	cursor: pointer;
 }
 
 .buttonJoin {
@@ -90,35 +90,35 @@ footer {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: transparent;
-    border-radius: .5em .75em;
-    border: .075em solid #FF5F6D;
+	border-radius: .5em .75em;
+	border: .075em solid #FF5F6D;
 }
 
 .buttonJoin:hover {
 	background: -webkit-linear-gradient(141deg, #FFC371 , #FF5F6D);
 	background: linear-gradient(141deg, #FFC371 , #FF5F6D);
 	-webkit-text-fill-color: white;
-	color: white;    
+	color: white;	
 	border-radius: .75em .5em;
-    border: .075em solid white;
+	border: .075em solid white;
 }
 
 .inputJoin {
 	background: -webkit-linear-gradient(141deg, #FFC371 , #FF5F6D);
 	background: linear-gradient(141deg, #FFC371 , #FF5F6D);
 	-webkit-text-fill-color: white;
-	color: white;    
+	color: white;	
 	border-radius: .5em .75em;
-    border: .075em solid white;
+	border: .075em solid white;
 }
 
 .inputJoin:hover {
 	background: -webkit-linear-gradient(141deg, #FFC371 , #FF5F6D);
 	background: linear-gradient(141deg, #FFC371 , #FF5F6D);
 	-webkit-text-fill-color: white;
-	color: white;    
+	color: white;	
 	border-radius: .75em .5em;
-    border: .075em solid white;
+	border: .075em solid white;
 }
 
 .buttonSubmit {
@@ -127,17 +127,17 @@ footer {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: transparent;
-    border-radius: .75em .5em;
-    border: .075em solid #185a9d;
+	border-radius: .75em .5em;
+	border: .075em solid #185a9d;
 }
 
 .buttonSubmit:hover {
 	background: -webkit-linear-gradient(141deg, #43cea2, #185a9d);
 	background: linear-gradient(141deg, #43cea2, #185a9d);
 	-webkit-text-fill-color: white; 
-	color: white;    
+	color: white;	
 	border-radius: .5em .75em;
-    border: .075em solid white;
+	border: .075em solid white;
 }
 
 .inputSubmitTopic {
@@ -145,18 +145,18 @@ footer {
 	background: -webkit-linear-gradient(141deg, #43cea2, #185a9d);
 	background: linear-gradient(141deg, #43cea2, #185a9d);
 	-webkit-text-fill-color: white; 
-	color: white;    
+	color: white;	
 	border-radius: .75em .5em;
-    border: .075em solid white;
+	border: .075em solid white;
 }
 
 .inputSubmitTopic:hover {
 	background: -webkit-linear-gradient(141deg, #43cea2, #185a9d);
 	background: linear-gradient(141deg, #43cea2, #185a9d);
 	-webkit-text-fill-color: white; 
-	color: white;    
+	color: white;	
 	border-radius: .5em .75em;
-    border: .075em solid white;
+	border: .075em solid white;
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
@@ -168,28 +168,28 @@ a:link, a:visited, a:hover, a:focus, a:active {
 }
 
 .content:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .media {
  	float: left;
-    width: 50%;
-    padding-right: 5em;
+	width: 50%;
+	padding-right: 5em;
 }
 
 .article {
 	float: right;
-    width: 50%;
+	width: 50%;
 	color: black;
 }
 
 .mediaImg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-   	margin: auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
 }
 
 .articleTitle {
@@ -218,23 +218,23 @@ a:link, a:visited, a:hover, a:focus, a:active {
 }
 
 .modal {
-    display: none;
-    position: fixed; 
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    overflow: none;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+	display: none;
+	position: fixed; 
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; 
+	overflow: none;
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
-    background-color: #fff;
-    margin: 33vh auto;
-    padding: 1vh 0;
-    width: 20em;
+	background-color: #fff;
+	margin: 33vh auto;
+	padding: 1vh 0;
+	width: 20em;
 }
 
 #inputEmail {
@@ -243,8 +243,8 @@ a:link, a:visited, a:hover, a:focus, a:active {
 	padding-left: .5em;
 	width: 14em;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: .8em;
+	font-weight: 400;
+	font-size: .8em;
 }
 
 #textArea {
@@ -252,24 +252,24 @@ a:link, a:visited, a:hover, a:focus, a:active {
 	height: 20vh;
 	padding: 0.5em;
 	overflow: hidden;
-    resize: none;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    border-radius: .5em;
-    border: 1px solid #c7c7c7;
+	resize: none;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	border-radius: .5em;
+	border: 1px solid #c7c7c7;
 }
 
 
 @media screen and (max-width: 47.5em) {
-    .media, .article {
-        float: none;
-        width: auto;
-    }
-    .media{
-    	padding-right: 0;
-    }
-    .article {
+	.media, .article {
+		float: none;
+		width: auto;
+	}
+	.media{
+		padding-right: 0;
+	}
+	.article {
 		padding: 2em 1em 0 1em;
 	}
 }
