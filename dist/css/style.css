@@ -40,14 +40,23 @@ footer {
 	text-align: center;
 }
 
-.header1 {
+.header1 {	
+	background: -webkit-linear-gradient(90deg, #c2c2c2, black);
+	background: linear-gradient(90deg, black, #c2c2c2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
 	letter-spacing: .25em;	
 	padding-top: 20vh;
 	margin: 0;
 }
 
 .header2 {
-	color: #fe38cb;
+	background: -webkit-linear-gradient(90deg, #fe8ed0, #ff0096);
+	background: linear-gradient(90deg, #ff0096, #fe8ed0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
 	letter-spacing: .2em;
 	font-weight: 500;
 	padding-top: 20vh;
@@ -55,7 +64,11 @@ footer {
 }
 
 .header3 {
-	color: #fe38cb;
+	background: -webkit-linear-gradient(141deg, #fe8ed0, #ff0096);
+	background: linear-gradient(141deg, #ff0096, #fe8ed0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
 	letter-spacing: .15em;
 	font-weight: 400;
 	padding-top: 3vh;
