@@ -177,7 +177,7 @@ footer {
 }
 
 .iconfa {
-	padding: 0 .4em;
+	padding-right: .6em;
 }
 
 .content {
@@ -236,9 +236,7 @@ footer {
 }
 
 .social {
-    clear: both;
     padding-top: 2em;
-    text-align: center;
 }
 
 .modal {
@@ -295,6 +293,9 @@ footer {
 	}
 	.article {
 		padding: 2em 1em 0 1em;
+	}
+	.social {
+		text-align: center;
 	}
 }
 
