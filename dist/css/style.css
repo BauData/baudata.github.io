@@ -24,16 +24,12 @@ hr {
 	background: #999;
 }
 
-footer {
-	text-align: center;
+a {
+	color: black;
 }
 
-.footera {
-	color: #333;
-}
-
-.iconfa {
-	padding: .2em;
+a:link, a:visited, a:hover, a:focus, a:active {
+	text-decoration: none
 }
 
 .headerMain {
@@ -41,8 +37,8 @@ footer {
 }
 
 .header1 {	
-	background: -webkit-linear-gradient(90deg, #c2c2c2, black);
-	background: linear-gradient(90deg, black, #c2c2c2);
+	background: -webkit-linear-gradient(90deg, #c2c2c2, #222);
+	background: linear-gradient(90deg, #222, #c2c2c2);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: transparent;
@@ -172,8 +168,16 @@ footer {
 	border: .075em solid white;
 }
 
-a:link, a:visited, a:hover, a:focus, a:active {
-	text-decoration: none
+footer {
+	text-align: center;
+}
+
+.iconlink {
+	color: #333;
+}
+
+.iconfa {
+	padding: 0 .4em;
 }
 
 .content {
@@ -206,6 +210,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
 }
 
 .articleTitle {
+	color: #222;
 	letter-spacing: .1em;
 	font-weight: 500;
 	font-size: 2em;
@@ -228,6 +233,12 @@ a:link, a:visited, a:hover, a:focus, a:active {
 .articleIntro {
 	padding-top: 2em;
 	margin-bottom: 0;
+}
+
+.social {
+    clear: both;
+    padding-top: 2em;
+    text-align: center;
 }
 
 .modal {
