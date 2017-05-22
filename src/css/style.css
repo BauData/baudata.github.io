@@ -22,6 +22,8 @@ hr {
 	height: 1px;
 	width: 90vw;
 	background: #999;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 a {
@@ -170,6 +172,11 @@ a:link, a:visited, a:hover, a:focus, a:active {
 
 footer {
 	text-align: center;
+	margin-top: 1em;
+}
+
+footer i {
+	color: #fe8ed0;
 }
 
 .iconlink {
@@ -210,7 +217,11 @@ footer {
 }
 
 .articleTitle {
-	color: #222;
+	background: -webkit-linear-gradient(90deg, #fe8ed0, #ff0096);
+	background: linear-gradient(90deg, #ff0096, #fe8ed0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
 	letter-spacing: .1em;
 	font-weight: 500;
 	font-size: 2em;
@@ -226,13 +237,14 @@ footer {
 	float: left;
 }
 
-.articleView {
-	margin-right: 2em;
+.articleDate {
+	margin: .25em;
 }
 
 .articleIntro {
-	padding-top: 2em;
+	padding-top: 1em;
 	margin-bottom: 0;
+	line-height: 1.4;
 }
 
 .social {
